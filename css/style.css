@@ -1,69 +1,80 @@
-/* Initial Setup*/
+/* CSS for the project, structured by development steps */
 
-/* Had to put the following in order to remove the unexpected spaces at the border when viewed in the browser */
+/* Step 0: Initial Preparations
+   Resetting margins and paddings to ensure consistency across different browsers. 
+   Box-sizing set to border-box to include padding and border in the element's total width and height. 
+*/
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-
-/*
-STEP 1: Color and font styles (from the second image)
+/* Step 1: Colors and Font Styles
+   Applied colors and font styles based on design specifications from the provided image.
 */ 
 
-.header-hero-section,
-.footer-section {
+/* Hero and Footer */
+#masthead,
+#footer {
     background-color: #1f2937;
 }
 
-.title {
+/* Hero Main Text */
+.hero-main-text {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
 }
 
+/* Hero Secondary text, Header Link Text, and Footer(self-added) */
 .header-links,
-.subtext,
-.footer-section {
+.hero-secondary-text,
+#footer {
     font-size: 18px;
     color: #e5e7eb;
 }
 
+/* Header Logo Text */
 .header-logo {
     font-size: 24px;
     color: #f9faf8;
-    font-weight: bold; /* This was not mentioned explicitly in the specifications. But it seemed so in the image */
+    font-weight: bold; /* This was not mentioned explicitly in the specifications.*/
 }
 
+/* Button and Call to action */
 button,
-.signup-box {
+.sign-up-box {
     background-color: #3882f6;
 }
 
-.information {
+/* Information Header Text */
+.information-text {
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
 }
 
-.testimony-section {
+/* Quote Background */
+#testimonial {
     background-color: #e5e7eb;
 
 }
 
+/* Quote Text */
 .testimony {
     font-size: 36px;
     color: #1f2937;
     font-style: italic;
 }
 
-/*
-STEP 2: Layout
+/* Step 2: Positioning & Layout
+   The core part of this project. Deep Flexbox stuff!
 */
 
-/* Header & Hero */
+/* Section 1: Masthead(Header and Hero combined) */
 
-.header-hero-section{
+#masthead{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -73,7 +84,7 @@ STEP 2: Layout
     padding: 20px 150px 100px 150px;
 }
 
-.header {
+#header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -91,7 +102,7 @@ STEP 2: Layout
     gap: 20px
 }
 
-.hero {
+#hero {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -123,9 +134,9 @@ STEP 2: Layout
     color: white;
 }
 
-/* Information */
+/* Section 2: Information */
 
-.information-section {
+#information {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -163,9 +174,9 @@ STEP 2: Layout
     text-align: center;
 }
 
-/* Testimony */
+/* Section 3: Testimonial */
 
-.testimony-section {
+#testimonial {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,9 +197,9 @@ STEP 2: Layout
     align-self: flex-end;
 }
 
-/* Signup */
+/* Section 4: Sign up */
 
-.signup-section {
+#sign-up {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,7 +207,7 @@ STEP 2: Layout
     padding-bottom: 100px;
 }
 
-.signup-box {
+.sign-up-box {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -207,7 +218,7 @@ STEP 2: Layout
     color: white;
 }
 
-.signup-text {
+.sign-up-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -222,27 +233,25 @@ button {
     font-weight: bold;
 }
 
-.signup-box button {
+.sign-up-box button {
     border: 1px solid white;
     color: white;
 }
 
-/* Footer */
+/* Section 5: Footer */
 
-.footer-section {
+#footer {
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*
-STEP 3: Polishing stuff
+/* Step 3: Adding Final Touches
+   Added font-family for overall typography. Remember to link Roboto font in the HTML.
+   Had to Google this stuff!
 */
 
-/* Added Roboto font by Googling. Is not supported by default. Have to install it and link in HTML file.*/
-body {
+* {
     font-family: "Roboto", sans-serif;
 }
-
-
