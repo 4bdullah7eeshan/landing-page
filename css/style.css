@@ -1,5 +1,14 @@
+/* Initial Setup*/
+
+/* Had to put the following in order to remove the unexpected spaces at the border when viewed in the browser */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 /*
-ITERATION 1: Color and font styles (from the second image)
+STEP 1: Color and font styles (from the second image)
 */ 
 
 .header-hero-section,
@@ -49,7 +58,7 @@ button,
 }
 
 /*
-ITERATION 2: Layout
+STEP 2: Layout
 */
 
 /* Header & Hero */
@@ -102,6 +111,7 @@ ITERATION 2: Layout
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 5px;
 }
 
 .hero-image {
@@ -208,6 +218,8 @@ button {
     padding: 10px;
     border-radius: 8px;
     width: 120px;
+    color: white;
+    font-weight: bold;
 }
 
 .signup-box button {
@@ -223,3 +235,14 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+/*
+STEP 3: Polishing stuff
+*/
+
+/* Added Roboto font by Googling. Is not supported by default. Have to install it and link in HTML file.*/
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
