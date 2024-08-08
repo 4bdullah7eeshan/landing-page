@@ -27,7 +27,7 @@ ITERATION 1: Color and font styles (from the second image)
 }
 
 button,
-.signup-section {
+.signup-box {
     background-color: #3882f6;
 }
 
@@ -174,4 +174,43 @@ ITERATION 2: Layout
 
 .endorser {
     align-self: flex-end;
+}
+
+/* Signup */
+
+.signup-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.signup-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    width: 1000px;
+    height: 150px;
+    border-radius: 8px;
+    color: white;
+}
+
+.signup-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    width: 120px;
+}
+
+.signup-box button {
+    border: 1px solid white;
+    color: white;
 }
