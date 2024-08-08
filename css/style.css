@@ -214,3 +214,12 @@ button {
     border: 1px solid white;
     color: white;
 }
+
+/* Footer */
+
+.footer-section {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
